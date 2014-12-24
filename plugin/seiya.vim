@@ -7,7 +7,6 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 function! s:clear_bg(hl)
-  call s:save_hl(a:hl)
   execute "highlight " . a:hl . " ctermbg=None"
 endfunction
 
@@ -34,7 +33,7 @@ command! SeiyaAutoDisable autocmd! seiya_auto
 
 if get(g:, 'seiya_auto_enable', 0)
   augroup seiya
-    autocmd VimEnter * execute "call s:clear_auto() | autocmd! clear_bg_auto_enable"
+    autocmd VimEnter * execute "call s:clear_auto()"
   augroup END
 endif
 
