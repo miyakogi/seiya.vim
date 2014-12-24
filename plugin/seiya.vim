@@ -27,8 +27,19 @@ function! s:clear_auto()
   augroup END
 endfunction
 
+function! s:disable()
+  autocmd! seiya_auto
+  let l:colors_name = get(g:, 'colors_name', '')
+  echomsg l:colors_name
+  if l:colors_name !=# ''
+    try
+      execute 'colorscheme ' . l:colors_name
+    endtry
+  endif
+endfunction
+
 command! SeiyaEnable call s:clear_auto()
-command! SeiyaDisable autocmd! seiya_auto
+command! SeiyaDisable call s:disable()
 
 if get(g:, 'seiya_auto_enable', 0)
   augroup seiya
