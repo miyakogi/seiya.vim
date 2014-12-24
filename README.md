@@ -7,19 +7,15 @@ For you and your "waifu"
 
 #### Enable
 
-```vim
-:SeiyaEnable
-```
+Execute ``:SeiyaEnable`.
 
 #### Disable
 
-```vim
-:SeiyaDisable
-```
+Execute ``:SeiyaDisable`, and then change the colorscheme.
 
-#### Automatically enable when start vim
+#### Automatically enable when vim starts
 
-Write this in your vimrc.
+Add this line in your vimrc.
 
 ```vim
 let g:seiya_auto_enable=1
