@@ -5,11 +5,11 @@ seiya.vim
 
 #### Enable
 
-Execute `:SeiyaEnable`.
+`:SeiyaEnable`
 
 #### Disable
 
-Execute `:SeiyaDisable`.
+`:SeiyaDisable`
 
 If backgroung color is not updated, try `colorshame [your_colorscheme]`
 
