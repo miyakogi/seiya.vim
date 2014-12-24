@@ -11,7 +11,9 @@ Execute ``:SeiyaEnable`.
 
 #### Disable
 
-Execute ``:SeiyaDisable`, and then change the colorscheme.
+Execute ``:SeiyaDisable`.
+
+If backgroung color is not updated, try `colorshame [your_colorscheme]`
 
 #### Automatically enable when vim starts
 
