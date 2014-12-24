@@ -27,9 +27,8 @@ function! s:clear_auto()
   augroup END
 endfunction
 
-command! SeiyaEnable call s:clear_bg_all()
-command! SeiyaAutoEnable call s:clear_auto()
-command! SeiyaAutoDisable autocmd! seiya_auto
+command! SeiyaEnable call s:clear_auto()
+command! SeiyaDisable autocmd! seiya_auto
 
 if get(g:, 'seiya_auto_enable', 0)
   augroup seiya
