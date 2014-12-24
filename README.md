@@ -1,17 +1,15 @@
 seiya.vim
 =========
 
-For you and your "waifu"
-
 ## Usage
 
 #### Enable
 
-Execute ``:SeiyaEnable`.
+Execute `:SeiyaEnable`.
 
 #### Disable
 
-Execute ``:SeiyaDisable`.
+Execute `:SeiyaDisable`.
 
 If backgroung color is not updated, try `colorshame [your_colorscheme]`
 
