@@ -7,7 +7,7 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 function! s:clear_bg(hl)
-  execute "highlight " . a:hl . " ctermbg=None"
+  execute 'highlight ' . a:hl . ' ctermbg=None'
 endfunction
 
 function! s:clear_bg_all()
