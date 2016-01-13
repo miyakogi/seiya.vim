@@ -35,9 +35,10 @@ let g:seiya_auto_enable=1
 
 This option is helpful for [Neovim](https://neovim.io/) users.
 
+In Neovim with true-color terminal (`$NVIM_TUI_ENABLE_TRUE_COLOR=1`), this plugin does not work since gui\* highlight groups are used even when it's running on terminal. Below config solves this problem.
+
 ```vim
 " Default value: ['ctermbg']
 let g:seiya_target_groups = has('nvim') ? ['guibg'] : ['ctermbg']
 ```
 
-In Neovim with true-color terminal, this plugin does not work since gui\* highlight groups are used even when it's running on terminal. This option solves this problem.
