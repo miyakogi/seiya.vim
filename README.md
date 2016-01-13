@@ -3,6 +3,10 @@ Seiya.vim
 
 Vim plugin to clear and make transparent background color in (transparent) terminal.
 
+## Screen shot
+
+![screeen shot](screenshot.png)
+
 ## Usage
 
 ### Commands
