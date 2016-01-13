@@ -41,11 +41,11 @@ endfunction
 command! SeiyaEnable call s:clear_auto()
 command! SeiyaDisable call s:disable()
 
-if get(g:, 'seiya_auto_enable', 0)
-  augroup seiya
+augroup seiya_auto
+  if get(g:, 'seiya_auto_enable', 0)
     autocmd VimEnter * execute "call s:clear_auto()"
-  augroup END
-endif
+  endif
+augroup END
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
