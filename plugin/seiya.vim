@@ -6,8 +6,12 @@ let g:loaded_seiya = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
+let g:seiya_target_groups = get(g:, 'seiya_target_groups', ['ctermbg'])
+
 function! s:clear_bg(hl)
-  execute 'highlight ' . a:hl . ' ctermbg=None'
+  for group in g:seiya_target_groups
+    execute 'highlight ' . a:hl . ' ' . group . '=None'
+  endfor
 endfunction
 
 function! s:clear_bg_all()
