@@ -1,5 +1,7 @@
-seiya.vim
+Seiya.vim
 =========
+
+Vim plugin to clear and make transparent background color in (transparent) terminal.
 
 ## Usage
 
